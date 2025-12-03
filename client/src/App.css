@@ -1,0 +1,152 @@
+/* GLOBAL RESET & FONT */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  background-color: #f0f2f5; /* Light Grey Background */
+  color: #333;
+}
+
+/* --- LAYOUT CONTAINERS --- */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* --- HEADERS --- */
+h1 {
+  color: #1a202c;
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #3b82f6; /* Blue underline */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #4a5568;
+  margin-top: 0;
+}
+
+/* --- CARDS (The white boxes) --- */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin-bottom: 30px;
+}
+
+/* --- INPUTS & SELECTS --- */
+input, select {
+  width: 100%; /* Full width on mobile */
+  padding: 10px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Make inputs side-by-side on larger screens */
+.input-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* --- BUTTONS --- */
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-right: 10px;
+}
+
+/* Primary Button (Add/Update) */
+.btn-primary {
+  background-color: #3b82f6; /* Tech Blue */
+  color: white;
+}
+.btn-primary:hover { background-color: #2563eb; transform: translateY(-1px); }
+
+/* Secondary Button (Edit) */
+.btn-secondary {
+  background-color: #64748b; /* Slate Grey */
+  color: white;
+}
+.btn-secondary:hover { background-color: #475569; }
+
+/* Danger Button (Delete) */
+.btn-danger {
+  background-color: #ef4444; /* Red */
+  color: white;
+}
+.btn-danger:hover { background-color: #dc2626; }
+
+/* Action Button (Filter/Download) */
+.btn-action {
+  background-color: #10b981; /* Green */
+  color: white;
+}
+.btn-action:hover { background-color: #059669; }
+
+/* --- TABLE STYLING --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden; /* Clips corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+  background-color: #1e293b; /* Dark Navy */
+  color: white;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+tr:hover {
+  background-color: #f8fafc; /* Light highlight on hover */
+}
+
+/* --- LOGIN PAGE SPECIFIC --- */
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
